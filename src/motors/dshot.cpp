@@ -1,4 +1,4 @@
-#include "DShot.h"
+#include "dshot.h"
 
 #include <Arduino.h>
 #include <driver/rmt.h>

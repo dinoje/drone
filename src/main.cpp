@@ -1,12 +1,14 @@
 #include <Arduino.h>
+#include "flight/FlightController.h"
+
+FlightController flightController;
 
 void setup()
 {
-    Serial.begin(115200);
+    flightController.begin();
 }
 
 void loop()
 {
-    Serial.println("Drone FC running");
-    delay(1000);
+    flightController.update();
 }
